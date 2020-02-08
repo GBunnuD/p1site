@@ -10,4 +10,10 @@ form {
     background-color: #f2f2f2;
     padding: 50px;
   }
-  
+  .active{
+    
+    font-size: x-large;
+}
+  .mb-4{
+      padding: 10%;
+  }

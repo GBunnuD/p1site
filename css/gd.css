@@ -1,10 +1,23 @@
 
-.intro {
-
-    
-     font-style: italic;
-     font-family: sans-serif ;
+.intro1 {font-size: large;
+    background-color: lavenderblush;
 }
+.intro2{
+    font-size: large;
+    background-color: rgb(228, 223, 176);
+
+}
+
+.intro3{
+    font-size: large;
+    background-color: lightgreen;
+}
+
+.intro4{
+    font-size: large;
+    background-color: lightskyblue;
+}
+
 nav {
     background-color: black;
     
@@ -29,18 +42,42 @@ nav {
   h1{
       display: block;
       text-align: center;
+      font-weight: 900;
   }
-  h2{
+  h3{
       font-family: 'Trebuchet MS';
-  }
-  h3,h4,h5,h6{
-      font-family: Lucid Sans;
+      
+  
+      
   }
   
-  h4{
-    font-family: Lucid Sans;
-}
+  
 *{
     padding-right: 10px;
     padding-left:10px ;
 }
+aside{
+    background-color:rgb(27, 37, 37);
+}
+
+header{
+    background-color: rgb(222, 217, 230);
+    border-radius: 2%;
+    color: rgb(3, 13, 22);
+}
+
+    .active{
+        color: ghostwhite;
+        font-size: x-large;
+    }
+
+    footer{
+        font-size: large;
+        font-family: serif;
+        color: midnightblue;
+        text-align: center;
+    }
+ h4{
+     font-family: sans-serif;
+     color: maroon;
+ }
