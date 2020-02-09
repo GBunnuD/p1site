@@ -46,6 +46,7 @@ nav {
   }
   h3{
       font-family: 'Trebuchet MS';
+      text-align: left;
       
   
       
@@ -80,4 +81,10 @@ header{
  h4{
      font-family: sans-serif;
      color: maroon;
+ }
+
+ .video{
+     text-align: center;
+     font-family: monospace;
+     font-size: x-large;
  }
