@@ -1,0 +1,16 @@
+h1,body{
+    text-align: center;
+}
+table{
+    box-align: center;
+}
+button{
+    border: none;
+    background: white;
+    font-size: 2em;
+    color: blue;
+    
+}
+section{
+    text-align: center;
+}
