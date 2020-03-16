@@ -6,7 +6,7 @@ $(document).ready(function(){
  })
 
 
-
+const vv=(x,y,z)=>{return x*y*z}
 
 
 function practice_app()
@@ -19,34 +19,34 @@ function practice_app()
      localStorage.setItem('num3',numb3);
     
      
-     const grandtotal=numb1*numb2*numb3;
+     const grandtotal=vv(numb1,numb2,numb3);
      
 
      
-     document.querySelector('#grandtotal').innerHTML=`${grandtotal}`
+     document.querySelector('#grandtotal').innerHTML=`grandtotal`
 }
      document.querySelector('#calculation').addEventListener('click',practice_app)
 
-     const jokeURI = 'https://stats.nba.com/stats/commonallplayers'
+     const jokeURI = 'https://dog.ceo/api/breeds/image/random'
 
-// fetch information
-const getJoke = async () => {
-    try {
-        const response = await fetch(jokeURI)
-        const obj = await response.json()
-        console.log(`FETCHED. Response JSON ${obj}`)
-        const joke = obj.message || 'No joke for you.'
-        return joke
-    } catch (error) { console.error(error) }
-}
-const updateWithJoke = async (event) => {
-    try {
-        document.querySelector('#dogarea').src = ''
-        const answer = await getJoke()
-        document.querySelector('#dogarea').src = answer
-    } catch (error) { console.error(error) }
-}
-// document.getElementById('getscore').onclick(getJoke);
-document.addEventListener('click', event => {
-    if (event.target && event.target.id === 'getscore') { updateWithJoke(event) }
-})
+     // fetch information
+     const getJoke = async () => {
+         try {
+             const response = await fetch(jokeURI)
+             const obj = await response.json()
+             console.log(`FETCHED. Response JSON ${obj}`)
+             const joke = obj.message || 'No joke for you.'
+             return joke
+         } catch (error) { console.error(error) }
+     }
+     const updateWithJoke = async (event) => {
+         try {
+             document.querySelector('#dogarea').src = ''
+             const answer = await getJoke()
+             document.querySelector('#dogarea').src = answer
+         } catch (error) { console.error(error) }
+     }
+     // document.getElementById('getscore').onclick(getJoke);
+     document.addEventListener('click', event => {
+         if (event.target && event.target.id === 'getscore') { updateWithJoke(event) }
+     })
